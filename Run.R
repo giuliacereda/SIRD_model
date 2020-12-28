@@ -10,6 +10,7 @@ dir.create(file.path(mainDir, "WS"), showWarnings = FALSE)
 
 
 vuoi.parallelizzare=1
+n.cores=16
 n.boot=500
 p_seq<-0.0114
 
@@ -133,7 +134,7 @@ fop.bootx<-function(vec_p){
 }
 
 t1<-Sys.time()
-plan(multiprocess, workers = 16)
+plan(multiprocess, workers = n.cores)
 s<-future.apply::future_apply(par_all[ggg,],1,FUN = fop.bootx )
 t2<-Sys.time()
 t2-t1
@@ -194,7 +195,7 @@ lb<-vec_parameters - 20
 lb[2]<-max(0, lb[2])
  
 
-plan(multiprocess, workers = 16)
+plan(multiprocess, workers = n.cores)
 output<-future.apply::future_apply(m2, 2,boot.calibr.par2)
 
 parameters.boot<-matrix(0, n.boot, length(vec_parameters))
