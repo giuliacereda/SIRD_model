@@ -13,19 +13,19 @@ Analysis of COVID spread in Tuscany and Italy
  Figures
  
 ## Run.R
-1.The main code is in the file Run.R It calls the functions of the file “Functions.R” 
-Put all files in the same folder and set it as the working directory through the command setwd(pathname) in Run.R
-2. Define the time window for the analysis appropriately setting the variables data.ini and data.exit
+1.The main code is in the file Run.R. It calls the functions of the file “Functions.R”. Put all files in the same folder and set it as the working directory through the command setwd(pathname) in Run.R
+
+2. Define the time window for the analysis, by appropriately setting the variables data.ini and data.exit
+
 3. If you want to use your cores in parallel, set: vuoi.parallelizzare<-1, otherwise 0
+
 4. If you want to modify the value of the infection fatality rate, change the value assigned to the variable p_seq (now p_seq=0.0114)
+
 5. Set the number of boostrap, for example n.boot<-100
  
+N.B. The code models R0(t) through a natural cubic regression spline with 5 internal knots placed  at the quantiles. One can increase the number of knots by adding new parameters to the R0(t) curve in the code (i.e. by adding new variables r7, r8,…). This could be needed when extending the study period.  
 
-N.B. The code models R0(t) through a natural cubic regression spline with 5 internal knots placed  at the quantiles. One can increase the number of knots by adding new parameters to the R0(t) curve in the code (i.e. by adding new variables  r7…). This could be needed when extending the study period.  
-
-N.N.B with  the code takes around tot hours with 16 virtual chores to run.
-
-When the codes has ended running, a copy of the workingspace is created in the folder WS, the name of the file contains the final data 
+N.N.B The code takes around tot hours with 16 virtual chores to run. When the code has ended running, a copy of the work space is created in the folder WS, the name of the file contains the final data  
 
 
 ## Plot.R
