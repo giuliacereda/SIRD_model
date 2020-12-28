@@ -21,7 +21,7 @@ Put all files in the same folder and set it as the working directory through the
 5. Set the number of boostrap, for example n.boot<-100
  
 
-N.B. The code models R0(t) through a natural cubic regression spline with 4 internal knots placed  at the quantiles. One can increase the number of knots by adding new parameters to the R0(t) curve in the code (i.e. by adding new variables r6, r7…). This could be needed when extending the study period.  
+N.B. The code models R0(t) through a natural cubic regression spline with 5 internal knots placed  at the quantiles. One can increase the number of knots by adding new parameters to the R0(t) curve in the code (i.e. by adding new variables  r7…). This could be needed when extending the study period.  
 
 N.N.B with  the code takes around tot hours with 16 virtual chores to run.
 
