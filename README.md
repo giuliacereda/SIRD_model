@@ -1,5 +1,5 @@
-# SIRDmodel
-Analysis of COVID spread in Tuscany and Italy
+# SIRD model
+Analysis of COVID spread in the Italian regions
 
 
  The repository contains the following files:
