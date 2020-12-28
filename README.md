@@ -1,4 +1,4 @@
-# SI2R2Dmodel
+# SIRDmodel
 Analysis of COVID spread in Tuscany and Italy
 
 
