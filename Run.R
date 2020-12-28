@@ -20,6 +20,7 @@ library(parallel)
 library(xtable())
 library(optimr) 
 library(splines)
+library(future.apply)
 library(future)
 
 ################################
@@ -58,6 +59,9 @@ r0.4<-seq(-5,5,1)
 r0.5<-seq(-5,5,1)   
 r0.6<-seq(-5,5,1)   
 
+
+par_all<-as.matrix(expand.grid(p_seq,r0.0, r0.1,r0.2,r0.3,r0.4,r0.5,r0.6, dinf,dmort))
+
 p_seq<-0.0114 #IFR
 dinf<-14   #time to recovery 
 dmort<-14  #time to death
@@ -68,7 +72,7 @@ pesi=c(1,0,0)
 ############################################################
 #       create the list of deaths (morti) and positive at 31/07 (positivi.ini) for all Regions
 ############################################################
- 
+ g=1
 morti<-list()
 positivi.ini<-list()
 for (g in 1:20){ 
@@ -113,7 +117,6 @@ obs.dead<-morti[[g]]
 i0<-positivi.ini[[g]]
 
 
-par_all<-as.matrix(expand.grid(p_seq,r0.0, r0.1,r0.2,r0.3,r0.4,r0.5,r0.6, dinf,dmort))
 set.seed(12)
 ggg<- sample(1:(dim(par_all)[1]), size = 100)
  
