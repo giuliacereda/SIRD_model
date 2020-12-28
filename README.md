@@ -20,7 +20,7 @@ The main code is in the file Run.R. It calls the functions of the file “Functi
 
 2. Define the time window for the analysis, by appropriately setting the variables data.ini and data.exit
 
-3. If you want to use your cores in parallel, set: vuoi.parallelizzare<-1, otherwise 0
+3. If you want to use your cores in parallel, set: vuoi.parallelizzare<-1, otherwise 0. Set n.cores equal to the number of available cores in your system.
 
 4. If you want to modify the value of the infection fatality rate, change the value assigned to the variable p_seq (now p_seq=0.0114)
 
