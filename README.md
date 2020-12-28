@@ -33,9 +33,9 @@ N.N.B The code takes around tot hours with 16 virtual chores to run. When the co
 
 ## Plot.R
 
-This code produces the plots that are saved in the folder Results
-In order to produce your own plots, you have to set the following variables:
+This code produces the plots that are saved in the folder Results. In order to produce your own plots, you have to set the following variables:
 
 1. schermo=0 if you want the code to produce a pdf in the folder Result, schermo=1 if you want the figures to be plotted on screen
+
 2. load the working space you want via the command load. Remember the working space are in the subfolder WS created by the code Run.R
 
