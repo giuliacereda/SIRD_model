@@ -14,7 +14,9 @@ Analysis of COVID spread in Tuscany and Italy
  
 ## Run.R
 
-1.The main code is in the file Run.R. It calls the functions of the file “Functions.R”. Put all files in the same folder and set it as the working directory through the command setwd(pathname) in Run.R
+The main code is in the file Run.R. It calls the functions of the file “Functions.R”. 
+
+1. Put all files in the same folder and set it as the working directory through the command setwd(pathname) in Run.R
 
 2. Define the time window for the analysis, by appropriately setting the variables data.ini and data.exit
 
