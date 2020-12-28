@@ -4,8 +4,8 @@ Analysis of COVID spread in Tuscany and Italy
 
  The repository contains the following files:
  
- Run.R
- Functions.R
+ Run.R\\
+ Functions.R\\
  Plot.R
  
  The repository contains the following folders:
